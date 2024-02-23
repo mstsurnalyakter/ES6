@@ -1,3 +1,5 @@
+
+/** Problem 1 */
 //Customer Database: Find a customer by their email address. using javascript find method
 
 const customers = [
@@ -23,8 +25,20 @@ const emailToFind = 'jane@example.com';
 const foundCustomer = customers.find(customer => customer.email === emailToFind);
 
 if (foundCustomer) {
-    console.log(`Customer found:, ${foundCustomer}`);
+    // console.log(`Customer found:, ${foundCustomer}`);
     // console.log('Customer found:', foundCustomer);
 } else {
     console.log(`Customer not found for email: ${emailToFind}`);
 }
+
+/** Problem 2 */
+
+// count++ or count + 1
+
+let array = [1, 2, 3, 4, 2, 2, 5, 2];
+let targetElement = 2;
+let count = 0;
+
+array.forEach((num) => (count = targetElement === num ? count++ : count));
+
+console.log(count);
