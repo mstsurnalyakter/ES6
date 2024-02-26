@@ -20,6 +20,7 @@ const shop = {
     isNew:false
 }
 
+
 const shopJSON = JSON.stringify(shop);
 const shopObj = JSON.parse(shopJSON)
 console.log(shopJSON);
